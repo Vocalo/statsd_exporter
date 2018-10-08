@@ -1,0 +1,12 @@
+[Unit]
+Description=statsd-exporter
+Documentation=https://github.com/Vocalo/statsd_exporter
+After=multi-user.target
+
+[Service]
+Type=idle
+EnvironmentFile=/usr/local/etc/default/statsd-exporter
+ExecStart=/opt/statsd_exporter-0.7.0.linux-amd64/statsd_exporter $ARGS
+
+[Install]
+WantedBy=multi-user.target
