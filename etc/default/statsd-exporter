@@ -1,1 +1,1 @@
-ARGS="--web.listen-address=':9102' --web.telemetry-path='/metrics' --statsd.listen-udp=':9125' --statsd.listen-udp=':9125'"
+ARGS="--web.listen-address=':9102' --web.telemetry-path='/metrics' --statsd.listen-udp=':8125' --statsd.listen-tcp=':8125'"
