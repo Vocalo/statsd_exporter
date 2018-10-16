@@ -6,7 +6,7 @@ After=multi-user.target
 [Service]
 Type=idle
 EnvironmentFile=/etc/default/statsd-exporter
-ExecStart=/opt/statsd_exporter-0.7.0.linux-amd64/statsd_exporter $ARGS
+ExecStart=/opt/statsd_exporter-0.8.0.linux-amd64/statsd_exporter $ARGS
 
 [Install]
 WantedBy=multi-user.target
